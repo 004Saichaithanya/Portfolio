@@ -1,6 +1,6 @@
 // App.jsx
 import React from 'react';
-import { CssBaseline, Container } from '@mui/material';
+import { CssBaseline, Container, Box } from '@mui/material';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './theme';
 import Footer from './Components/Footer';
@@ -11,35 +11,55 @@ import Skills from './Components/Skills';
 import Resume from './Components/Resume';
 import Contact from './Components/Contacts';
 
-
 function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Navbar />
       <Container maxWidth="lg">
-        <section  id='Home'>
-        <Hero />
-        </section>
+        <Box
+          component="section"
+          id="Home"
+          sx={{ py: { xs: 4, sm: 6, md: 8 } }}
+        >
+          <Hero />
+        </Box>
 
-        <section id='Projects'>
-        <Projects/>
-        </section>
+        <Box
+          component="section"
+          id="Projects"
+          sx={{ py: { xs: 4, sm: 6, md: 8 } }}
+        >
+          <Projects />
+        </Box>
 
-        <section id='Skills'>
-        <Skills/>
-        </section>
-        <section id='Resume'>
-        <Resume/>
-        </section>
+        <Box
+          component="section"
+          id="Skills"
+          sx={{ py: { xs: 4, sm: 6, md: 8 } }}
+        >
+          <Skills />
+        </Box>
 
-        <section id='Contacts'>
-        <Contact/>
-        </section>
+        <Box
+          component="section"
+          id="Resume"
+          sx={{ py: { xs: 4, sm: 6, md: 8 } }}
+        >
+          <Resume />
+        </Box>
+
+        <Box
+          component="section"
+          id="Contacts"
+          sx={{ py: { xs: 4, sm: 6, md: 8 } }}
+        >
+          <Contact />
+        </Box>
       </Container>
       <Footer />
     </ThemeProvider>
-  );  
+  );
 }
 
 export default App;
