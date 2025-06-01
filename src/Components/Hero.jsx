@@ -14,7 +14,10 @@ export default function Hero() {
         <Typography variant="h4" sx={{ color: '#64ffda', fontFamily: 'Fira Code' }}>
           Hi, I'm
         </Typography>
-        <Typography variant="h2" sx={{ fontWeight: 'bold', color: '#ccd6f6' }}>
+        <Typography
+          variant="h3"
+          sx={{ fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' }, fontWeight: 'bold' }}
+        >
           Poloju Sai Chaithanya
         </Typography>
         <Typography variant="h6" sx={{ color: '#64ffda', mt: 1 }}>
