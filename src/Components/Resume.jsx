@@ -17,7 +17,7 @@ export default function Resume() {
         }}
       >
         <iframe
-          src="/public/SaiChaithanya_Resume.pdf"
+          src="/SaiChaithanya_Resume.pdf"
           width="80%"
           height="100%"
           style={{
@@ -33,7 +33,7 @@ export default function Resume() {
         variant="outlined"
         startIcon={<Download />}
         sx={{ color: '#64ffda', borderColor: '#64ffda' }}
-        href="/public/SaiChaithanya_Resume.pdf"
+        href="/SaiChaithanya_Resume.pdf"
         download
       >
         Download CV
