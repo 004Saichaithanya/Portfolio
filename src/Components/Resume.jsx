@@ -12,7 +12,7 @@ export default function Resume() {
         sx={{
           display: 'flex',
           justifyContent: 'center',
-          height: '50vh',
+          height: '80vh',
           mb: 2,
         }}
       >
