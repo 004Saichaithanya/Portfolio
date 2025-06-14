@@ -10,6 +10,7 @@ import Projects from './Components/Projects';
 import Skills from './Components/Skills';
 import Resume from './Components/Resume';
 import Contact from './Components/Contacts';
+import Achievements from './Components/Achievements';
 
 function App() {
   return (
@@ -47,6 +48,13 @@ function App() {
           sx={{ py: { xs: 4, sm: 6, md: 8 } }}
         >
           <Resume />
+        </Box>
+                <Box
+          component="section"
+          id="Achievements"
+          sx={{ py: { xs: 4, sm: 6, md: 8 } }}
+        >
+          <Achievements/>
         </Box>
 
         <Box
