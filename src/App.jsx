@@ -8,7 +8,7 @@ import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
 import Projects from './Components/Projects';
 import Skills from './Components/Skills';
-import Resume from './Components/Resume';
+// import Resume from './Components/Resume';
 import Contact from './Components/Contacts';
 import Achievements from './Components/Achievements';
 
@@ -42,13 +42,13 @@ function App() {
           <Skills />
         </Box>
 
-        <Box
+        {/* <Box
           component="section"
           id="Resume"
           sx={{ py: { xs: 4, sm: 6, md: 8 } }}
         >
           <Resume />
-        </Box>
+        </Box> */}
                 <Box
           component="section"
           id="Achievements"
