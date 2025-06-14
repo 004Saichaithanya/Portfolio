@@ -1,26 +1,25 @@
 import React from 'react';
 import { Typography, Box, Button } from '@mui/material';
 import { Download } from '@mui/icons-material';
-import useMediaQuery from '@mui/material/useMediaQuery';
 
 export default function Resume() {
-  const isMobile = useMediaQuery('(max-width:600px)');
-
   return (
-    <Box sx={{ mt: 8, textAlign: 'center', px: 2 }}>
+    <Box sx={{ mt: 8, textAlign: 'center' }}>
       <Typography variant="h4" sx={{ color: '#64ffda', mb: 2 }}>Resume</Typography>
 
+      {/* Embed the PDF resume */}
       <Box
         sx={{
           display: 'flex',
           justifyContent: 'center',
+          height: '80vh',
           mb: 2,
         }}
       >
         <iframe
           src="/SaiChaithanya_Resume.pdf"
-          width={isMobile ? '100%' : '80%'}
-          height={isMobile ? '500px' : '80vh'}
+          width="80%"
+          height="100%"
           style={{
             border: '2px solid #64ffda',
             borderRadius: '8px',
@@ -29,6 +28,7 @@ export default function Resume() {
         ></iframe>
       </Box>
 
+      {/* Optional download button */}
       <Button
         variant="outlined"
         startIcon={<Download />}
