@@ -18,7 +18,7 @@ export default function Navbar() {
           &lt;/Poloju&gt;
         </Typography>
         <Box>
-          {['Home', 'Projects', 'Skills', 'Resume', 'Contacts','Achievements'].map((item) => (
+          {['Home', 'Projects', 'Skills', 'Resume','Achievements', 'Contact'].map((item) => (
             <Button
               key={item}
               sx={{ color: '#ccd6f6', fontFamily: 'Fira Code', textTransform: 'none' }}
