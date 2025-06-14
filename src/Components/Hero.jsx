@@ -2,6 +2,7 @@ import React from 'react';
 import { Typography, Box, IconButton, Stack } from '@mui/material';
 import { motion } from 'framer-motion';
 import { GitHub, LinkedIn, Email } from '@mui/icons-material';
+import { Typewriter } from 'react-simple-typewriter';
 
 export default function Hero() {
   return (
@@ -21,7 +22,21 @@ export default function Hero() {
           Poloju Sai Chaithanya
         </Typography>
         <Typography variant="h6" sx={{ color: '#64ffda', mt: 1 }}>
-          Aspiring Software Engineer | AI & Web Development Enthusiast | Student at CBIT'27
+          <span>
+            <Typewriter
+              words={[
+                'Aspiring Software Engineer',
+                'AI & Web Development Enthusiast',
+                "Student at CBIT'27",
+              ]}
+              loop={0}
+              cursor
+              cursorStyle="|"
+              typeSpeed={50}
+              deleteSpeed={30}
+              delaySpeed={1000}
+            />
+          </span>
         </Typography>
         <Typography variant="h5" sx={{ color: '#8892b0', mt: 2 }}>
           I build intelligent software solutions.
