@@ -59,7 +59,7 @@ function App() {
 
         <Box
           component="section"
-          id="Contacts"
+          id="Contact"
           sx={{ py: { xs: 4, sm: 6, md: 8 } }}
         >
           <Contact />
