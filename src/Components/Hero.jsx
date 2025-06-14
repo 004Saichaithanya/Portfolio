@@ -2,7 +2,8 @@ import React from 'react';
 import { Typography, Box, IconButton, Stack } from '@mui/material';
 import { motion } from 'framer-motion';
 import { GitHub, LinkedIn, Email } from '@mui/icons-material';
-import { Typewriter } from 'react-simple-typewriter';
+import { TypeAnimation } from 'react-type-animation';
+
 
 export default function Hero() {
   return (
@@ -23,19 +24,21 @@ export default function Hero() {
         </Typography>
         <Typography variant="h6" sx={{ color: '#64ffda', mt: 1 }}>
           <span>
-            <Typewriter
-              words={[
-                'Aspiring Software Engineer',
-                'AI & Web Development Enthusiast',
-                "Student at CBIT'27",
-              ]}
-              loop={0}
-              cursor
-              cursorStyle="|"
-              typeSpeed={50}
-              deleteSpeed={30}
-              delaySpeed={1000}
-            />
+        <TypeAnimation
+          sequence={[
+            'Aspiring Software Engineer',
+            1000,
+            'AI & Web Development Enthusiast',
+            1000,
+            "Student at CBIT'27",
+            1000,
+          ]}
+          wrapper="span"
+          speed={50}
+          style={{ display: 'inline-block' }}
+          repeat={Infinity}
+        />
+
           </span>
         </Typography>
         <Typography variant="h5" sx={{ color: '#8892b0', mt: 2 }}>
