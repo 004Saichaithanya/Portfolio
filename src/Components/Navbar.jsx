@@ -10,7 +10,7 @@ export default function Navbar() {
   };
 
   return (
-    <AppBar position="sticky" color="transparent" elevation={0}>
+    <AppBar position="sticky" color="black" sx={{color:'black',width:'100%'}} elevation={0}>
       <Toolbar sx={{ justifyContent: 'space-between' }}>
         <Typography variant="h6" sx={{ fontFamily: 'Fira Code', color: '#64ffda', cursor: 'pointer' }}
           onClick={() => handleScroll('Home')}
@@ -18,7 +18,7 @@ export default function Navbar() {
           &lt;/Poloju&gt;
         </Typography>
         <Box>
-          {['Home', 'Projects', 'Skills', 'Resume', 'Contacts'].map((item) => (
+          {['Home', 'Projects', 'Skills', 'Resume', 'Contacts','Achievements'].map((item) => (
             <Button
               key={item}
               sx={{ color: '#ccd6f6', fontFamily: 'Fira Code', textTransform: 'none' }}
