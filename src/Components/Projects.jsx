@@ -44,48 +44,77 @@ const projects = [
 
 export default function Projects() {
   return (
-    <Box sx={{ px: { xs: 2, md: 10 }, py: 8 }}>
-      <Typography variant="h4" sx={{ mb: 5, color: '#64ffda', textAlign: 'left' }}>
+    <Box sx={{
+  px: { xs: 2, md: 10 },
+  py: { xs: 5, md: 8 },
+  background: 'linear-gradient(135deg,#0a192f 82%,#112240 100%)',
+  borderRadius: 8,
+  minHeight: '100vh',
+}}>
+      <Typography variant="h4" sx={{ mb: 5,color: '#64ffda', textAlign: 'center' }}>
         Projects
       </Typography>
       <Grid container spacing={4} justifyContent="center">
         {projects.map((proj, idx) => (
-          <Grid item xs={12} sm={6} md={4} lg={3} key={idx} sx={{ display: 'flex', justifyContent: 'center' }}>
+          <Grid item xs={12} sm={12} md={6}  key={idx} sx={{ display: 'flex', justifyContent: 'center' }}>
             <Card
-              sx={{
-                height: '100%',
-                minWidth: 280,
-                maxWidth: 360,
-                backgroundColor: '#112240',
-                borderLeft: '4px solid #64ffda',
-                display: 'flex',
-                flexDirection: 'column',
-                justifyContent: 'space-between',
-                transition: 'transform 0.2s ease, box-shadow 0.2s ease',
-                '&:hover': {
-                  transform: 'scale(1.02)',
-                  boxShadow: '0 0 10px #64ffda',
-                  cursor: 'pointer',
-                },
-              }}
+          sx={{
+            backgroundColor: '#1c2742',
+            color: '#ccd6f6',
+            borderRadius: 5,
+            boxShadow: '0 4px 32px #64ffda18',
+            border: '2px solid #112240',
+            px: { xs: 2, md: 8 },
+            py: { xs: 5, md: 6 },
+            mb: { xs: 4, md: 6 },
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            maxWidth: 900,
+            margin: '0 auto',
+            transition: 'box-shadow 0.2s, border-color 0.2s, transform 0.2s',
+            '&:hover': {
+              boxShadow: '0 0 32px #64ffda63',
+              borderColor: '#64ffda',
+              transform: 'scale(1.03) translateY(-5px)',
+            },
+          }}
               onClick={() => window.open(proj.link, '_blank')}
             >
               <CardActionArea sx={{ height: '100%' }}>
                 <CardContent sx={{ textAlign: 'center' }}>
                   <Avatar
-                    sx={{
-                      bgcolor: 'transparent',
-                      margin: '0 auto 10px',
-                      width: 80,
-                      height: 80,
-                    }}
+                sx={{
+                  bgcolor: '#0a192f',
+                  boxShadow: '0 2px 12px #64ffda33',
+                  width: 80,
+                  height: 80,
+                  mb: 2,
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                }}
                   >
                     {proj.icon}
                   </Avatar>
-                  <Typography variant="h6" sx={{ color: '#ccd6f6', mb: 1 }}>
+                  <Typography variant="h6" sx={{
+  color: '#64ffda',
+  fontFamily: 'Fira Code',
+  textAlign: 'center',
+  mb: 2,
+  fontWeight: 700,
+  fontSize: { xs: '1.1rem', md: '1.25rem' },
+  letterSpacing: 1.5,
+}}>
                     {proj.title}
                   </Typography>
-                  <Typography variant="body2" sx={{ color: '#8892b0' }}>
+                  <Typography variant="body2" sx={{
+  color: '#8892b0',
+  fontFamily: 'Inter, Fira Code, monospace',
+  textAlign: 'center',
+  fontSize: '1rem',
+  lineHeight: 1.6,
+}}>
                     {proj.description}
                   </Typography>
                 </CardContent>

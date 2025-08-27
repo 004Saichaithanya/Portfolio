@@ -7,7 +7,15 @@ import { TypeAnimation } from 'react-type-animation';
 
 export default function Hero() {
   return (
-    <Box sx={{ mt: 10, mb: 10, textAlign: 'center' }}>
+        <Box sx={{
+  mt: { xs: '3rem', md: '7rem' },
+  mb: { xs: '3rem', md: '7rem' },
+  textAlign: 'center',
+  px: { xs: '1rem', md: '6rem' },
+  width: '100%',
+  maxWidth: '900px',
+  margin: '0 auto'
+}}>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
@@ -18,7 +26,12 @@ export default function Hero() {
         </Typography>
         <Typography
           variant="h3"
-          sx={{ fontSize: { xs: '2rem', sm: '2.5rem', md: '3rem' }, fontWeight: 'bold' }}
+          sx={{
+      fontSize: { xs: '2rem', sm: '2.8rem', md: '3.5rem' },
+      lineHeight: 1.2,
+      fontWeight: 700,
+      color: '#64ffda'
+    }}
         >
           Poloju Sai Chaithanya
         </Typography>
