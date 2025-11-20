@@ -21,30 +21,54 @@ import BuildIcon from '@mui/icons-material/Build';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 
 const skills = [
-  { name: "Python", icon: <FaPython color='#64ffda' size={26} />, category: "Languages" },
-  { name: "Java (DSA)", icon: <FaJava color='#64ffda' size={26} />, category: "Languages" },
-  { name: "C", icon: <CodeIcon sx={{ color: '#64ffda' }} />, category: "Languages" },
-  { name: "C++", icon: <CodeIcon sx={{ color: '#64ffda' }} />, category: "Languages" },
-  { name: "HTML", icon: <HtmlIcon sx={{ color: '#64ffda' }} />, category: "Languages" },
-  { name: "CSS", icon: <CssIcon sx={{ color: '#64ffda' }} />, category: "Languages" },
-  { name: "JavaScript", icon: <CodeIcon sx={{ color: '#64ffda' }} />, category: "Languages" },
-  { name: "Python (Flask)", icon: <BiLogoFlask color='#64ffda' size={26} />, category: "Web" },
-  { name: "React.js", icon: <FaReact color='#64ffda' size={26} />, category: "Web" },
-  { name: "Express.js", icon: <FaNodeJs color='#64ffda' size={26} />, category: "Web" },
-  { name: "SQL", icon: <FaDatabase color='#64ffda' size={26} />, category: "Database" },
-  { name: "MongoDB", icon: <SiMongodb color='#64ffda' size={26} />, category: "Database" },
-  { name: "TensorFlow", icon: <SiTensorflow color='#64ffda' size={26} />, category: "ML/DL" },
-  { name: "ML/DL algorithms", icon: <FaRobot color='#64ffda' size={26} />, category: "ML/DL" },
-  { name: "Computer Vision", icon: <VisibilityIcon sx={{ color: '#64ffda' }} />, category: "ML/DL" },
-  { name: "VS Code", icon: <VscVscode color='#64ffda' size={26} />, category: "Tools" },
-  { name: "Jupyter", icon: <SiJupyter color='#64ffda' size={26} />, category: "Tools" },
-  { name: "GitHub", icon: <GitHubIcon sx={{ color: '#64ffda' }} />, category: "Tools" },
-  { name: "Adaptability", icon: <EmojiObjectsIcon sx={{ color: '#64ffda' }} />, category: "SoftSkills" },
-  { name: "Teamwork", icon: <GroupIcon sx={{ color: '#64ffda' }} />, category: "SoftSkills" },
-  { name: "Communication", icon: <HiSpeakerphone color='#64ffda' size={26} />, category: "SoftSkills" },
-  { name: "Debugging", icon: <VscDebugAll color='#64ffda' size={26} />, category: "Other" },
-  { name: "Performance Tuning", icon: <GrOptimize color='#64ffda' size={26} />, category: "Other" },
+  // Languages
+  { name: "Python", icon: <FaPython color='#64ffda' size={26} /> },
+  { name: "Java", icon: <FaJava color='#64ffda' size={26} /> },
+  { name: "C", icon: <CodeIcon sx={{ color: '#64ffda' }} /> },
+  { name: "C++", icon: <CodeIcon sx={{ color: '#64ffda' }} /> },
+  { name: "JavaScript", icon: <CodeIcon sx={{ color: '#64ffda' }} /> },
+  { name: "HTML", icon: <HtmlIcon sx={{ color: '#64ffda' }} /> },
+  { name: "CSS", icon: <CssIcon sx={{ color: '#64ffda' }} /> },
+
+  // Web Dev & APIs
+  { name: "Flask", icon: <BiLogoFlask color='#64ffda' size={26} /> },
+  { name: "FastAPI", icon: <BuildIcon sx={{ color: '#64ffda' }} /> },
+  { name: "React.js", icon: <FaReact color='#64ffda' size={26} /> },
+  { name: "Node.js / Express.js", icon: <FaNodeJs color='#64ffda' size={26} /> },
+  { name: "REST API Development", icon: <BuildIcon sx={{ color: '#64ffda' }} /> },
+
+  // Databases
+  { name: "MySQL", icon: <FaDatabase color='#64ffda' size={26} /> },
+  { name: "MongoDB", icon: <SiMongodb color='#64ffda' size={26} /> },
+  { name: "NoSQL Databases", icon: <SiMongodb color='#64ffda' size={26} /> },
+
+  // Cloud & Deployment
+  { name: "Firebase", icon: <VscDebugAll color='#64ffda' size={26} /> },
+  { name: "Google Cloud", icon: <SiJupyter color='#64ffda' size={26} /> },
+  { name: "IBM Cloud", icon: <VscVscode color='#64ffda' size={26} /> },
+
+  // ML / DL
+  { name: "Scikit-learn", icon: <FaRobot color='#64ffda' size={26} /> },
+  { name: "TensorFlow", icon: <SiTensorflow color='#64ffda' size={26} /> },
+  { name: "Computer Vision", icon: <VisibilityIcon sx={{ color: '#64ffda' }} /> },
+  { name: "LLM's (LangChain, GenAI)", icon: <EmojiObjectsIcon sx={{ color: '#64ffda' }} /> },
+
+  // Tools & OS
+  { name: "Git / GitHub", icon: <GitHubIcon sx={{ color: '#64ffda' }} /> },
+  { name: "VS Code", icon: <VscVscode color='#64ffda' size={26} /> },
+  { name: "Jupyter Notebook", icon: <SiJupyter color='#64ffda' size={26} /> },
+  { name: "Google Colab", icon: <SiJupyter color='#64ffda' size={26} /> },
+  { name: "Kaggle", icon: <FaDatabase color='#64ffda' size={26} /> },
+  { name: "Linux / Unix", icon: <VscDebugAll color='#64ffda' size={26} /> },
+  { name: "Bash Scripting", icon: <VscDebugAll color='#64ffda' size={26} /> },
+
+  // Soft Skills
+  { name: "Problem-solving", icon: <EmojiObjectsIcon sx={{ color: '#64ffda' }} /> },
+  { name: "Teamwork", icon: <GroupIcon sx={{ color: '#64ffda' }} /> },
+  { name: "Adaptability", icon: <EmojiObjectsIcon sx={{ color: '#64ffda' }} /> },
+  { name: "Communication", icon: <HiSpeakerphone color='#64ffda' size={26} /> },
 ];
+
 
 export default function Skills() {
   return (

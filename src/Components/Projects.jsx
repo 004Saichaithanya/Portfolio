@@ -8,39 +8,42 @@ import {
   Box,
   Avatar,
 } from '@mui/material';
+
 import {
   Science,
-  Translate,
   Healing,
   Group,
+  Dashboard,
 } from '@mui/icons-material';
+
 
 const projects = [
   {
-    title: 'AIHealthPro: Disease Prediction System',
-    description: 'Used ML algorithms to predict diseases like diabetes, lung, liver, and BP. Built with Flask and a user-friendly UI.',
-    link: 'https://github.com/004Saichaithanya/AIHealthpro',
-    icon: <Science sx={{ color: '#64ffda', fontSize: 40 }} />,  // Larger icon
-  },
-  {
-    title: 'Language Detection',
-    description: 'Detected 25 Indian languages using ML. Flask-based web app for real-time detection.',
-    link: 'https://github.com/004Saichaithanya/LangDetection_ML',
-    icon: <Translate sx={{ color: '#64ffda', fontSize: 40 }} />,  // Larger icon
+    title: 'Crowd Detection System',
+    description: 'Real-time crowd detection and heatmap-based counting using a custom-trained YOLO model with threshold-triggered alerts. Built using Flask APIs and React (Vite).',
+    link: 'https://github.com/004Saichaithanya/HTF25-Team-144',
+    icon: <Group sx={{ color: '#64ffda', fontSize: 40 }} />,
   },
   {
     title: 'Skin Cancer Detection',
-    description: 'Deep learning multiclass classifier for skin cancer detection using transfer learning.',
+    description: 'Deep learning multiclass classifier for skin cancer detection using transfer learning and medical image analysis.',
     link: 'https://github.com/004Saichaithanya/Skin_Cancer_DL',
-    icon: <Healing sx={{ color: '#64ffda', fontSize: 40 }} />,  // Larger icon
+    icon: <Healing sx={{ color: '#64ffda', fontSize: 40 }} />,
   },
   {
-    title: 'Social Media Platform',
-    description: 'Django-based full-stack project with authentication, profiles, and real-time interactions.',
-    link: 'https://github.com/004Saichaithanya/CODETECH-TASK2',
-    icon: <Group sx={{ color: '#64ffda', fontSize: 40 }} />,  // Larger icon
+    title: 'Ayursutra Web Application',
+    description: 'AI-driven Ayurvedic dashboard built using React, FastAPI, and Firebase with real-time analytics and an integrated AI chatbot.',
+    link: 'https://github.com/004Saichaithanya/ayursutra-panchakarma-app',
+    icon: <Dashboard sx={{ color: '#64ffda', fontSize: 40 }} />,
+  },
+    {
+    title: 'AIHealthPro: Disease Prediction System',
+    description: 'ML-based disease prediction system for diabetes, lung, liver, and BP using Flask and a user-friendly UI.',
+    link: 'https://github.com/004Saichaithanya/AIHealthpro',
+    icon: <Science sx={{ color: '#64ffda', fontSize: 40 }} />,
   },
 ];
+
 
 export default function Projects() {
   return (

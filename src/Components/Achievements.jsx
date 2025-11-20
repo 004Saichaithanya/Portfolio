@@ -24,6 +24,13 @@ const iconMap = {
 const achievements = [
   {
     year: '2025',
+    title: 'IBM SkillsBuild Internship – AI & Cloud',
+    description: '4-week AICTE–Edunet internship covering Cloud, AI, Data Analytics, Chatbots, and AutoAI.',
+    icon: iconMap.School,
+    link: 'https://drive.google.com/file/d/1Wi3zpZ338HmlR2X-cFS9vGa7e3pRJ2NN/view?usp=sharing', // local resume path (certificate/reference)
+  },
+  {
+    year: '2025',
     title: 'Deep Learning Certification - CBIT Winter Upskilling',
     description: 'Successfully completed a certification program on Deep Learning as part of CBIT’s Winter Upskilling initiative.',
     icon: iconMap.School,
